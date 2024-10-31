@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int a, b, c, d;
+	int m, n;
+	scanf("%d %d", &m, &n);
+	if (m < -10000 || m>10000 || n < -10000 || n>10000) {
+		printf("输入的两个整数在区间[-10000, 10000]之内");
+		return 1;
+	}
+	a = m + n;
+	b = m - n;						11
+	c = m * n;                     无问题
+	d = m / n;
+	printf("%d\n %d\n %d\n %d", a, b, c, d);
+	return 0;
+}
